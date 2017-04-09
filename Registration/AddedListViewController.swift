@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  Registration
 //
 //  Created by Bulat Khabirov on 09.04.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AddedListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Registration
 //
 //  Created by Bulat Khabirov on 09.04.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class AddRegistryViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

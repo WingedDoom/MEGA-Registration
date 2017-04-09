@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3B1E9A942300F058BC /* AppDelegate.swift */; };
-		52DEFC3E1E9A942300F058BC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3D1E9A942300F058BC /* FirstViewController.swift */; };
-		52DEFC401E9A942300F058BC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3F1E9A942300F058BC /* SecondViewController.swift */; };
+		52DEFC3E1E9A942300F058BC /* AddedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */; };
+		52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3F1E9A942300F058BC /* AddRegistryViewController.swift */; };
 		52DEFC431E9A942300F058BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DEFC411E9A942300F058BC /* Main.storyboard */; };
 		52DEFC451E9A942300F058BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DEFC441E9A942300F058BC /* Assets.xcassets */; };
 		52DEFC481E9A942300F058BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DEFC461E9A942300F058BC /* LaunchScreen.storyboard */; };
+		52DEFC561E9AAD0F00F058BC /* RegistryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */; };
 		A9777F4FFF6AF8FFF8D1CED3 /* Pods_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ABFFDC178958251A40532E /* Pods_Registration.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +22,15 @@
 		34CAB00F4AD2BECD7F83DBB9 /* Pods-Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Registration/Pods-Registration.release.xcconfig"; sourceTree = "<group>"; };
 		52DEFC381E9A942300F058BC /* Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DEFC3B1E9A942300F058BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52DEFC3D1E9A942300F058BC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		52DEFC3F1E9A942300F058BC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedListViewController.swift; sourceTree = "<group>"; };
+		52DEFC3F1E9A942300F058BC /* AddRegistryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistryViewController.swift; sourceTree = "<group>"; };
 		52DEFC421E9A942300F058BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52DEFC441E9A942300F058BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DEFC471E9A942300F058BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DEFC491E9A942300F058BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DEFC4F1E9A981E00F058BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		52DEFC501E9A981E00F058BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryModel.swift; sourceTree = "<group>"; };
 		B0ABFFDC178958251A40532E /* Pods_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,14 +77,39 @@
 			isa = PBXGroup;
 			children = (
 				52DEFC3B1E9A942300F058BC /* AppDelegate.swift */,
-				52DEFC3D1E9A942300F058BC /* FirstViewController.swift */,
-				52DEFC3F1E9A942300F058BC /* SecondViewController.swift */,
-				52DEFC411E9A942300F058BC /* Main.storyboard */,
-				52DEFC441E9A942300F058BC /* Assets.xcassets */,
-				52DEFC461E9A942300F058BC /* LaunchScreen.storyboard */,
+				52DEFC541E9AA01100F058BC /* Model */,
+				52DEFC521E9A9FEE00F058BC /* Controller */,
+				52DEFC531E9A9FFC00F058BC /* View */,
 				52DEFC491E9A942300F058BC /* Info.plist */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		52DEFC521E9A9FEE00F058BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */,
+				52DEFC3F1E9A942300F058BC /* AddRegistryViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		52DEFC531E9A9FFC00F058BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52DEFC411E9A942300F058BC /* Main.storyboard */,
+				52DEFC441E9A942300F058BC /* Assets.xcassets */,
+				52DEFC461E9A942300F058BC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		52DEFC541E9AA01100F058BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D31AEF39F2C87D866F3BB32F /* Frameworks */ = {
@@ -215,9 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DEFC401E9A942300F058BC /* SecondViewController.swift in Sources */,
+				52DEFC561E9AAD0F00F058BC /* RegistryModel.swift in Sources */,
+				52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */,
 				52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */,
-				52DEFC3E1E9A942300F058BC /* FirstViewController.swift in Sources */,
+				52DEFC3E1E9A942300F058BC /* AddedListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +258,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52DEFC421E9A942300F058BC /* Base */,
+				52DEFC4F1E9A981E00F058BC /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -236,6 +267,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52DEFC471E9A942300F058BC /* Base */,
+				52DEFC501E9A981E00F058BC /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -247,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -298,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
