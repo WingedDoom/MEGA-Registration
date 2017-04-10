@@ -29,6 +29,7 @@ class AddedListViewController: UIViewController {
         counterItem.title = "Всего: \(sortedRegistries.count)"
         token = registries.addNotificationBlock({ [weak self] (_) in
             self?.tableView.reloadData()
+            self?.sortedRegistries = self!.registries.sorted { $0.timePeriod < $1.timePeriod }
             self?.counterItem.title = "Всего: \(self!.sortedRegistries.count)"
         })
     }
