@@ -54,6 +54,11 @@ class TimePeriod: Object, Comparable {
             return false
         }
 
+        // Exception for making that 23:00 is less than 00:00
+        if hours1 < 10 && hours2 > 10 {
+            return true
+        }
+        
         if hours2 != hours1 {
             return hours1 > hours2
         } else {
