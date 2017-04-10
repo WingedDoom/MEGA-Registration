@@ -27,7 +27,7 @@ struct RegistryCellViewConfig {
     let timePeriod: String
     
     init(model: RegistryModel) {
-        name = model.lastName + " " + model.name + " " + model.midName
+        name = model.lastName + " " + model.name + " (тел. \(model.phoneNumber))"
         company = model.company
         timePeriod = model.timePeriod.value
     }

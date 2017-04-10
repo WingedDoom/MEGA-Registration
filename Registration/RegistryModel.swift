@@ -11,7 +11,7 @@ import RealmSwift
 
 class RegistryModel: Object {
     dynamic var name = ""
-    dynamic var midName = ""
+    dynamic var phoneNumber = ""
     dynamic var lastName = ""
     
     dynamic var company = ""

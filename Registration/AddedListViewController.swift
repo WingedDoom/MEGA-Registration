@@ -11,15 +11,30 @@ import RealmSwift
 
 class AddedListViewController: UIViewController {
 
+    @IBOutlet weak var counterItem: UIBarButtonItem!
     let realm = try! Realm()
     @IBOutlet weak var tableView: UITableView!
     var registries: Results<RegistryModel>!
+    var sortedRegistries: [RegistryModel]!
+    
+    var token: NotificationToken!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registries = realm.objects(RegistryModel.self)
+        sortedRegistries = registries.sorted { $0.timePeriod < $1.timePeriod }
         configureTableView()
+        
+        counterItem.title = "Всего: \(sortedRegistries.count)"
+        token = registries.addNotificationBlock({ [weak self] (_) in
+            self?.tableView.reloadData()
+            self?.counterItem.title = "Всего: \(self!.sortedRegistries.count)"
+        })
+    }
+    
+    deinit {
+        token.stop()
     }
 
     func configureTableView() {
@@ -36,7 +51,7 @@ class AddedListViewController: UIViewController {
             
             let navController = segue.destination as! UINavigationController
             let editController = navController.viewControllers.first! as! AddRegistryViewController
-            editController.registry = registries[indexPath.row]
+            editController.registry = sortedRegistries[indexPath.row]
             editController.isEditingEntry = true
         }
     }
@@ -75,7 +90,7 @@ extension AddedListViewController: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! RegistryTableViewCell
-        let model = registries[indexPath.row]
+        let model = sortedRegistries[indexPath.row]
         
         cell.configure(with: RegistryCellViewConfig(model: model))
         

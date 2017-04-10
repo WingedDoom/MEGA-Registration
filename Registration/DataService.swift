@@ -34,4 +34,14 @@ class DataService {
             realm.add(TimePeriod(stringValue: "00:15-00:30")!)
         }
     }
+
+    func getSortedTimePeriods() -> [TimePeriod] {
+        let periods = realm.objects(TimePeriod.self)
+        return periods.sorted { $0 < $1 }
+    }
+    
+    func getNumberOfRegistries(for period: TimePeriod) -> Int {
+        let registries = realm.objects(RegistryModel.self)
+        return (registries.filter { $0.timePeriod == period }).count
+    }
 }
