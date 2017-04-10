@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import MessageUI
 
-class AddedListViewController: UIViewController {
+class AddedListViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var counterItem: UIBarButtonItem!
     let realm = try! Realm()
@@ -18,6 +19,7 @@ class AddedListViewController: UIViewController {
     var sortedRegistries: [RegistryModel]!
     
     var token: NotificationToken!
+    var addedCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +33,29 @@ class AddedListViewController: UIViewController {
             self?.tableView.reloadData()
             self?.sortedRegistries = self!.registries.sorted { $0.timePeriod < $1.timePeriod }
             self?.counterItem.title = "Всего: \(self!.sortedRegistries.count)"
+            self?.addedCount += 1
+            
+            if self!.addedCount % 5 == 0 {
+                let mailController = MFMailComposeViewController()
+                
+                mailController.setSubject("Новая версия списка данных о зарегистрированых пользователях")
+                mailController.setToRecipients(["aliya@immotion.me"])
+                mailController.setMessageBody("Отправлено через приложение Registration.", isHTML: false)
+                mailController.addAttachmentData(DataService.shared.exportCacheInXLS(), mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName: "Очередь.xlsx")
+                mailController.mailComposeDelegate = self
+                self?.present(mailController, animated: true, completion: nil)
+            }
         })
     }
     
     deinit {
         token.stop()
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
 
     func configureTableView() {

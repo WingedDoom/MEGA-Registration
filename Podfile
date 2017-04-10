@@ -9,5 +9,4 @@ target 'Registration' do
   # Pods for Registration
   pod 'RealmSwift'
   pod 'XlsxReaderWriter'
-  pod 'CCAutocomplete'
 end

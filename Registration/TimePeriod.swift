@@ -47,7 +47,6 @@ class TimePeriod: Object, Comparable {
 
         let value1 = lhs.value.substring(to: lhs.value.index(lhs.value.startIndex, offsetBy: 5))
         let value2 = rhs.value.substring(to: rhs.value.index(rhs.value.startIndex, offsetBy: 5))
-        print("\(value1) > \(value2)?")
 
         guard let hours1 = Int(value1.substring(to: value1.index(value1.startIndex, offsetBy: 2))),
                 let hours2 = Int(value2.substring(to: value2.index(value2.startIndex, offsetBy: 2))) else {

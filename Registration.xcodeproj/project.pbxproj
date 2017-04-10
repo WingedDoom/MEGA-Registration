@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52175D4A1E9B0FA900865291 /* RegistryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52175D491E9B0FA900865291 /* RegistryTableViewCell.swift */; };
 		52175D4C1E9B71BA00865291 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52175D4B1E9B71BA00865291 /* TimeCollectionViewCell.swift */; };
+		526B226F1E9BC57E00D1B169 /* queue.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 526B226E1E9BC57D00D1B169 /* queue.xlsx */; };
 		52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3B1E9A942300F058BC /* AppDelegate.swift */; };
 		52DEFC3E1E9A942300F058BC /* AddedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */; };
 		52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3F1E9A942300F058BC /* AddRegistryViewController.swift */; };
@@ -26,6 +27,7 @@
 		34CAB00F4AD2BECD7F83DBB9 /* Pods-Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Registration/Pods-Registration.release.xcconfig"; sourceTree = "<group>"; };
 		52175D491E9B0FA900865291 /* RegistryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryTableViewCell.swift; sourceTree = "<group>"; };
 		52175D4B1E9B71BA00865291 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		526B226E1E9BC57D00D1B169 /* queue.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = queue.xlsx; sourceTree = "<group>"; };
 		52DEFC381E9A942300F058BC /* Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DEFC3B1E9A942300F058BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedListViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		52DEFC3A1E9A942300F058BC /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				526B226E1E9BC57D00D1B169 /* queue.xlsx */,
 				52DEFC3B1E9A942300F058BC /* AppDelegate.swift */,
 				52DEFC541E9AA01100F058BC /* Model */,
 				52DEFC521E9A9FEE00F058BC /* Controller */,
@@ -203,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526B226F1E9BC57E00D1B169 /* queue.xlsx in Resources */,
 				52DEFC481E9A942300F058BC /* LaunchScreen.storyboard in Resources */,
 				52DEFC451E9A942300F058BC /* Assets.xcassets in Resources */,
 				52DEFC431E9A942300F058BC /* Main.storyboard in Resources */,
