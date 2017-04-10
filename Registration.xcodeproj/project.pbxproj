@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52175D4A1E9B0FA900865291 /* RegistryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52175D491E9B0FA900865291 /* RegistryTableViewCell.swift */; };
 		52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3B1E9A942300F058BC /* AppDelegate.swift */; };
 		52DEFC3E1E9A942300F058BC /* AddedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */; };
 		52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC3F1E9A942300F058BC /* AddRegistryViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		2765634FF44931DB9E881243 /* Pods-Registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Registration/Pods-Registration.debug.xcconfig"; sourceTree = "<group>"; };
 		34CAB00F4AD2BECD7F83DBB9 /* Pods-Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Registration/Pods-Registration.release.xcconfig"; sourceTree = "<group>"; };
+		52175D491E9B0FA900865291 /* RegistryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryTableViewCell.swift; sourceTree = "<group>"; };
 		52DEFC381E9A942300F058BC /* Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DEFC3B1E9A942300F058BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DEFC3D1E9A942300F058BC /* AddedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedListViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				52DEFC411E9A942300F058BC /* Main.storyboard */,
+				52175D491E9B0FA900865291 /* RegistryTableViewCell.swift */,
 				52DEFC441E9A942300F058BC /* Assets.xcassets */,
 				52DEFC461E9A942300F058BC /* LaunchScreen.storyboard */,
 			);
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DEFC561E9AAD0F00F058BC /* RegistryModel.swift in Sources */,
+				52175D4A1E9B0FA900865291 /* RegistryTableViewCell.swift in Sources */,
 				52DEFC581E9AAF6C00F058BC /* TimePeriod.swift in Sources */,
 				52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */,
 				52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */,
