@@ -10,11 +10,11 @@ import UIKit
 import RealmSwift
 
 class RegistryModel: Object {
-    var name = ""
-    var midName = ""
-    var lastName = ""
+    dynamic var name = ""
+    dynamic var midName = ""
+    dynamic var lastName = ""
     
-    var company = ""
+    dynamic var company = ""
     
-    var timePeriod: TimePeriod! = TimePeriod()
+    dynamic var timePeriod: TimePeriod! = TimePeriod()
 }

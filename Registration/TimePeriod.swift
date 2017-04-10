@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class TimePeriod: Object, Comparable {
-    var value: String = "" {
+    dynamic var value: String = "" {
         didSet {
             guard value.range(of: "\\d{2}:\\d{2}-\\d{2}:\\d{2}", options: .regularExpression) != nil else {
                 value = ""

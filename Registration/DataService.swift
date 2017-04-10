@@ -10,10 +10,9 @@ class DataService {
     static let shared = DataService()
     let realm = try! Realm()
 
-    /// Adds time periods to realm database
+    /// Adds preset time periods to realm database
     func setInitialPeriodsToRealm() {
         guard realm.objects(TimePeriod.self).count == 0 else {
-            // already done that
             return
         }
 
@@ -33,10 +32,6 @@ class DataService {
             realm.add(TimePeriod(stringValue: "23:45-00:00")!)
             realm.add(TimePeriod(stringValue: "00:00-00:15")!)
             realm.add(TimePeriod(stringValue: "00:15-00:30")!)
-        }
-
-        if realm.objects(TimePeriod.self).count == 14 {
-            print("Everything went ok!")
         }
     }
 }
