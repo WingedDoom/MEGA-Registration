@@ -1,0 +1,26 @@
+PODS:
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmSwift (2.4.4):
+    - Realm (= 2.4.4)
+  - SSZipArchive (0.4.0)
+  - XlsxReaderWriter (1.0.11):
+    - SSZipArchive (~> 0.4)
+    - XMLDictionary (~> 1.4)
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - RealmSwift
+  - XlsxReaderWriter
+
+SPEC CHECKSUMS:
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  SSZipArchive: d3d66fc0e3fb6ac0f723d95481aae71aae916cc3
+  XlsxReaderWriter: 7e4c5c9fb7c4e78e4edc89fa11f50c086540277c
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: f86deee5f455d51db011ae3670822c63ee2259d2
+
+COCOAPODS: 1.2.0
