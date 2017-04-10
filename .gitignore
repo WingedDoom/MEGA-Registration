@@ -6,6 +6,9 @@
 build/
 DerivedData/
 
+## AppCode
+.idea/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

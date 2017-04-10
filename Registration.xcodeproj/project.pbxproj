@@ -14,7 +14,9 @@
 		52DEFC451E9A942300F058BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DEFC441E9A942300F058BC /* Assets.xcassets */; };
 		52DEFC481E9A942300F058BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DEFC461E9A942300F058BC /* LaunchScreen.storyboard */; };
 		52DEFC561E9AAD0F00F058BC /* RegistryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */; };
+		52DEFC581E9AAF6C00F058BC /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEFC571E9AAF6C00F058BC /* TimePeriod.swift */; };
 		A9777F4FFF6AF8FFF8D1CED3 /* Pods_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ABFFDC178958251A40532E /* Pods_Registration.framework */; };
+		B8330D9B6ED289DBD725DA5C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83305F5239196AE75757E1D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		52DEFC4F1E9A981E00F058BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		52DEFC501E9A981E00F058BC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryModel.swift; sourceTree = "<group>"; };
+		52DEFC571E9AAF6C00F058BC /* TimePeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 		B0ABFFDC178958251A40532E /* Pods_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83305F5239196AE75757E1D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				52DEFC551E9AAD0F00F058BC /* RegistryModel.swift */,
+				52DEFC571E9AAF6C00F058BC /* TimePeriod.swift */,
+				B8330D024DEC5DC20E816AE2 /* Services */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B8330D024DEC5DC20E816AE2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B83305F5239196AE75757E1D /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		D31AEF39F2C87D866F3BB32F /* Frameworks */ = {
@@ -245,9 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DEFC561E9AAD0F00F058BC /* RegistryModel.swift in Sources */,
+				52DEFC581E9AAF6C00F058BC /* TimePeriod.swift in Sources */,
 				52DEFC401E9A942300F058BC /* AddRegistryViewController.swift in Sources */,
 				52DEFC3C1E9A942300F058BC /* AppDelegate.swift in Sources */,
 				52DEFC3E1E9A942300F058BC /* AddedListViewController.swift in Sources */,
+				B8330D9B6ED289DBD725DA5C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
